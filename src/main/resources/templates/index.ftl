@@ -16,6 +16,15 @@
                 </span>
             </div>
         </div>
+        <#--loading遮罩层-->
+        <div class="modal fade" id="downloadModal" backdrop="static" keyboard="false">
+            <div class="loading">
+                <div class="progress progress-striped active margin-zero">
+                    <div class="progress-bar full-width"></div>
+                </div>
+                <h5 id="downloadText">正在下载图片，请稍后...</h5>
+            </div>
+        </div>
         <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
         <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
         <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
