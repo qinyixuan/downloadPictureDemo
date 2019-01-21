@@ -139,7 +139,7 @@ public class DownloadPictureController {
             String src = "";
             while (srcMatcher.find()) {
                 src = srcMatcher.group().substring(0, srcMatcher.group().length() - 1);
-                // LALA的图库url处理
+                // LALA的图库url处理(https://233.fi)
                 if (src.contains(".md")) {
                     src = src.replace(".md", "");
                 }
