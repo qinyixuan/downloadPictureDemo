@@ -1,14 +1,15 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>下载图片</title>
-        <link rel="icon" href="../images/icon.png" type="image/x-icon">
+        <title>Yixuan</title>
+        <link rel="shortcut icon" href="../images/favicon.ico">
         <link rel="stylesheet" href="../css/index.css">
         <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body>
         <div class="center">
+            <div class="img-center"><img src="../images/logo.png" alt="logo.png"></div>
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="请输入图片地址..." id="url">
                 <span class="input-group-btn">
