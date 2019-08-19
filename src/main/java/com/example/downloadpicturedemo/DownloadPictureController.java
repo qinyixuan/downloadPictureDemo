@@ -30,7 +30,7 @@ public class DownloadPictureController {
 
     private static final String IMGSRC_REG = "[a-zA-z]+://[^\\s]*";
 
-    private static final String DOWNLOAD_PATH = "E:\\images\\";
+    private static final String DOWNLOAD_PATH = "/home/li/Pictures";
 
     /**
      * index
@@ -160,6 +160,11 @@ public class DownloadPictureController {
     private boolean download(List<String> list) {
         long beginTime = System.currentTimeMillis();
         try {
+            // 创建文件夹
+            File file = new File(DOWNLOAD_PATH);
+            if (!file.exists()) {
+                file.mkdirs();
+            }
             list.forEach(string -> {
                 String pictureName = string.substring(string.lastIndexOf("/") + 1);
                 InputStream inputStream = null;
